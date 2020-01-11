@@ -237,7 +237,7 @@ def initialize() {
     getInititialDeviceInfo()
 	
 	// Schedule it to run every 5 minutes
-	//runEvery5Minutes("poll") /* I usually have it commented because i run refresh with rules */
+	runEvery5Minutes("poll") /* I usually have it commented because i run refresh with rules */
 }
 
 def getInititialDeviceInfo(){
