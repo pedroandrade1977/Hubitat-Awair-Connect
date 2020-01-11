@@ -14,4 +14,9 @@ To use:
 6) Before completing, you can indicate whether you want to retrieve Temperature information in Fahrenheit (default is Celsius)
 7) You can also indicate whether you want to store data with 0, 1 or 2 decimal places. I use this in order to display correctly in Dashboard tiles
 
+Additional settings:
+- in App code, row 26, you can set debug level: 1 is trace level (everything), 5 is error only
+- in App code, row 240, you can set polling refresh frequency. I usually comment this out, as I refresh based on a rule in RM
+
+
 That's it. Enjoy and feel free to let me know of any issues.
