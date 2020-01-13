@@ -10,12 +10,12 @@
  *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
  *  for the specific language governing permissions and limitations under the License.
  *
- *	Awair 2 Driver
+ *	Awair Driver
  *
  * Author: Pedro Andrade
  *
  *	Updates:
- *	Date: 2020-01-31	v1.0 Initial release
+ *	Date: 2020-01-11	v1.0 Initial release
  */
 
 import java.text.DecimalFormat
