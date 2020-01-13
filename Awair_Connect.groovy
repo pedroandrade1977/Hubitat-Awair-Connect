@@ -14,7 +14,8 @@
  * Author: Pedro Andrade
  *
  *	Updates:
- *	Date: 2020-01-31	v1.0 Initial release
+ *	Date: 2020-01-11	v1.0 Initial release
+ 8      Date: 2020-01-13        v1.0.1 Fixed small issue with retrieval of awairScore
  */
 
 import java.text.DecimalFormat
@@ -362,7 +363,7 @@ def parseAirDataResponse(childDevice, resp) {
     if(resp.status == 200) {
 
         addToLog("parseAirDataResponse(): send event for awairScore = ${resp.data.data.score}",2)
-        childDevice?.sendEvent(name:"awairScore",value: resp.data.data.score)
+        childDevice?.sendEvent(name:"awairScore",value: resp.data.data.score[0])
 
         resp.data.data.sensors.each {sensors ->
             sensors.each {sensor ->
